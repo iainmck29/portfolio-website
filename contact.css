@@ -29,9 +29,9 @@ h2 {
 }
 
 main {
-    max-width: 720px;
-    margin: auto;
-  }
+  max-width: 720px;
+  margin: auto;
+}
 
 p {
   text-align: center;
@@ -40,41 +40,36 @@ p {
   color: white;
 }
 
-
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 300px;
-    margin: auto;
-    padding: 20px 20px 40px 20px;
-    border: 1px solid hsla(54, 100%, 47%, 1);
-    border-radius: 20px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 300px;
+  margin: auto;
+  padding: 20px 20px 40px 20px;
+  border: 1px solid hsla(54, 100%, 47%, 1);
+  border-radius: 20px;
 }
 
 form input {
-    margin-bottom: 10px;
-    width: 80%;
-    background-color: hsla(0, 0%, 36%, 0.74);
-    border: 1px solid black;
-    color: white;
-    padding: 5px;
-
+  margin-bottom: 10px;
+  width: 80%;
+  background-color: hsla(0, 0%, 36%, 0.74);
+  border: 1px solid black;
+  color: white;
+  padding: 5px;
 }
 
 ::placeholder {
-    color: white;
+  color: white;
 }
 
 form textarea {
-    margin-bottom: 10px;
-    width: 80%;
+  margin-bottom: 10px;
+  width: 80%;
   background-color: hsla(0, 0%, 36%, 0.74);
   border: 1px solid black;
   padding: 5px;
-
-
 }
 
 footer {
@@ -106,12 +101,11 @@ nav ul li i {
 }
 
 .submit-btn {
-    max-width: 150px;
+  max-width: 150px;
 }
 
 .submit-btn:hover {
   background-color: hsla(0, 0%, 36%, 1);
-
 }
 
 /* Header Section */
@@ -132,42 +126,41 @@ nav ul {
   padding-top: 50px;
 }
 
-
 @media only screen and (min-width: 1100px) {
-  
-    /* Nav Section */
-    .show-desktop {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .hide-desktop {
-      display: none;
-    }
-  
-    header {
-      max-width: 1200px;
-    }
-    main {
-        max-width: 1200px;
-      }
-    nav {
-      width: 50%;
-    }
-  
-    nav ul {
-      position: inherit;
-      width: auto;
-      background: none;
-      height: auto;
-      padding-top: 0;
-    }
-  
-    nav ul li {
-      padding-right: 20px;
-    }
-  
-    nav ul li a {
-      text-align: right;
-      padding: 0;
-    }
+  /* Nav Section */
+  .show-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  header {
+    max-width: 1200px;
+  }
+  main {
+    max-width: 1200px;
+  }
+  nav {
+    width: 50%;
+  }
+
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    padding-top: 0;
+  }
+
+  nav ul li {
+    padding-right: 20px;
+  }
+
+  nav ul li a {
+    text-align: right;
+    padding: 0;
+  }
+}
