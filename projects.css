@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+/* Universal styles */
+
+body {
+  background-color: hsla(0, 0%, 22%, 1);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  max-width: 720px;
+}
+
+header i {
+  color: white;
+  padding-right: 20px;
+}
+
+header i {
+  color: white;
+  padding-right: 20px;
+}
+
+h2 {
+  font-family: Montserrat;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+main {
+  max-width: 720px;
+  margin: auto;
+}
+
+section {
+  border: 1px solid hsla(54, 100%, 47%, 1);
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-block: 0;
+  font-family: Montserrat;
+  color: white;
+  text-align: justify;
+}
+
+footer {
+  text-align: center;
+}
+
+section img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 24px;
+  display: block;
+  width: 100%;
+  padding: 20px 50px;
+}
+
+nav ul li i {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  cursor: pointer;
+}
+
+/* Header Section */
+.hide-mobile {
+  display: none;
+}
+
+nav ul {
+  position: fixed;
+  width: 30%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: rgb(36, 41, 44);
+  height: 100%;
+  z-index: 10;
+  opacity: 0.8;
+  padding-top: 50px;
+}
+
+.alt-section img {
+  float: right;
+  padding: 0 0 10px 20px;
+}
+
+@media only screen and (min-width: 560px) {
+  section img {
+    width: 250px;
+    float: left;
+    padding: 0 20px 10px 0;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .skills {
+    max-width: 1200px;
+    margin: 20px;
+  }
+
+  /* Nav Section */
+  .show-desktop {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  header {
+    max-width: 1200px;
+  }
+
+  main {
+    max-width: 1200px;
+  }
+
+  nav {
+    width: 50%;
+  }
+
+  nav ul {
+    position: inherit;
+    width: auto;
+    background: none;
+    height: auto;
+    padding-top: 0;
+  }
+
+  nav ul li {
+    padding-right: 20px;
+  }
+
+  nav ul li a {
+    text-align: right;
+    padding: 0;
+  }
+}

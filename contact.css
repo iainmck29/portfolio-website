@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+/* Universal styles */
+
+body {
+  background-color: hsla(0, 0%, 22%, 1);
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  max-width: 720px;
+}
+
+header i {
+  color: white;
+  padding-right: 20px;
+}
+
+h2 {
+  font-family: Montserrat;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+main {
+    max-width: 720px;
+    margin: auto;
+  }
+
+p {
+  text-align: center;
+  margin-block: 0;
+  font-family: Montserrat;
+  color: white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px 20px 40px 20px;
+    border: 1px solid hsla(54, 100%, 47%, 1);
+    border-radius: 20px;
+
+}
+
+form input {
+    margin-bottom: 10px;
+    width: 80%;
+    background-color: hsla(0, 0%, 36%, 0.74);
+    border: 1px solid black;
+    color: white;
+    padding: 5px;
+
+}
+
+::placeholder {
+    color: white;
+}
+
+form textarea {
+    margin-bottom: 10px;
+    width: 80%;
+  background-color: hsla(0, 0%, 36%, 0.74);
+  border: 1px solid black;
+  padding: 5px;
+
+
+}
+
+footer {
+  text-align: center;
+  height: 60px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 24px;
+  display: block;
+  width: 100%;
+  padding: 20px 50px;
+}
+
+nav ul li i {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.submit-btn {
+    max-width: 150px;
+}
+
+.submit-btn:hover {
+  background-color: hsla(0, 0%, 36%, 1);
+
+}
+
+/* Header Section */
+.hide-mobile {
+  display: none;
+}
+
+nav ul {
+  position: fixed;
+  width: 30%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: rgb(36, 41, 44);
+  height: 100%;
+  z-index: 10;
+  opacity: 0.8;
+  padding-top: 50px;
+}
+
+
+@media only screen and (min-width: 1100px) {
+  
+    /* Nav Section */
+    .show-desktop {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .hide-desktop {
+      display: none;
+    }
+  
+    header {
+      max-width: 1200px;
+    }
+    main {
+        max-width: 1200px;
+      }
+    nav {
+      width: 50%;
+    }
+  
+    nav ul {
+      position: inherit;
+      width: auto;
+      background: none;
+      height: auto;
+      padding-top: 0;
+    }
+  
+    nav ul li {
+      padding-right: 20px;
+    }
+  
+    nav ul li a {
+      text-align: right;
+      padding: 0;
+    }
